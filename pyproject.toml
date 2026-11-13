@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pinn-shocks"
+version = "0.1.0"
+description = "Physics-informed neural networks for shock-dominated flows: Sod shock tube and Burgers' equation"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Ozaif Ali" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "torch>=2.1", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["pinn_shocks"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
