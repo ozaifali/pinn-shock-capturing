@@ -98,7 +98,7 @@ displacement of a near-discontinuity, and the error jumps by an order of magnitu
 ## Reproduce
 
 ```bash
-git clone https://github.com/OWNER/pinn-shock-capturing.git
+git clone https://github.com/ozaifali/pinn-shock-capturing.git
 cd pinn-shock-capturing
 pip install -e ".[dev]"          # numpy, torch, matplotlib, pytest
 
